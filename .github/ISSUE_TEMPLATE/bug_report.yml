@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem.
+body:
+- type: markdown
+  attributes:
+    value: |-
+      Search existing issues before opening a new report. Share only files you have permission to publish, and remove private information from logs.
+
+      For vulnerabilities, use [private reporting](https://github.com/MusaCAD/MusaCAD/security/advisories/new) or email [pranay@weberq.in](mailto:pranay@weberq.in).
+- type: textarea
+  id: problem
+  attributes:
+    label: What happened?
+    description: Describe the actual result.
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    description: Give the smallest sequence that reproduces the problem.
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected result
+    description: Describe what should happen instead.
+  validations:
+    required: true
+- type: textarea
+  id: environment
+  attributes:
+    label: Version and environment
+    description: Affected version/commit or page URL; OS, browser, and relevant tools or dependencies.
+  validations:
+    required: true
+- type: textarea
+  id: evidence
+  attributes:
+    label: Sample, logs, or screenshots
+    description: Attach a minimal drawing or model only if you can share it publicly. ZIP archives can
+      be used for file types GitHub does not accept. Screenshots and crash logs are optional.
